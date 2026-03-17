@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+        <div class="nav-links">
+            <button class="nav-btn active" data-target="profile">Personal Profile</button>
+            <button class="nav-btn" data-target="budget">Budget Calculator</button>
+            <button class="nav-btn" data-target="favorites">Favorites Generator</button>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <!-- 1. Personal Profile Module -->
+        <section id="profile" class="module active">
+            <h2>Personal Profile Page</h2>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="hobby">Your Hobby:</label>
+                <input type="text" id="hobby">
+            </div>
+            <div class="form-group">
+                <label for="food">Your favorite Food:</label>
+                <input type="text" id="food">
+            </div>
+            <div class="form-group">
+                <label for="job">Your dream Job:</label>
+                <input type="text" id="job">
+            </div>
+            <button id="profileBtn" class="action-btn">Show My Story</button>
+            <div id="profileOutput" class="output"></div>
+        </section>
+
+        <!-- 2. Budget Calculator Module -->
+        <section id="budget" class="module">
+            <h2>Personal Budget Calculator</h2>
+            <div class="form-group">
+                <label for="income">Income ($):</label>
+                <input type="number" id="income" placeholder="Enter income" min="0">
+            </div>
+            <div class="form-group">
+                <label for="foodExp">Food Expense ($):</label>
+                <input type="number" id="foodExp" placeholder="Enter food expense" min="0">
+            </div>
+            <div class="form-group">
+                <label for="transportExp">Transport Expense ($):</label>
+                <input type="number" id="transportExp" placeholder="Enter transport expense" min="0">
+            </div>
+            <div class="form-group">
+                <label for="entertainmentExp">Entertainment Expense ($):</label>
+                <input type="number" id="entertainmentExp" placeholder="Enter entertainment expense" min="0">
+            </div>
+            <button id="budgetBtn" class="action-btn">Calculate Balance</button>
+            <div id="budgetOutput" class="output"></div>
+        </section>
+
+        <!-- 3. Favorites Generator Module -->
+        <section id="favorites" class="module">
+            <h2>Favorites Generator</h2>
+            <div class="form-group">
+                <label for="movie">Favorite Movie:</label>
+                <input type="text" id="movie">
+            </div>
+            <div class="form-group">
+                <label for="music">Favorite Music:</label>
+                <input type="text" id="music">
+            </div>
+            <div class="form-group">
+                <label for="place">Favorite Place:</label>
+                <input type="text" id="place">
+            </div>
+            <button id="favoritesBtn" class="action-btn">Generate Profile</button>
+            <div id="favoritesOutput" class="output"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
